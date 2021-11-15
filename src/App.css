@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+.outerBox {
+  height: 100vh;
+  font-family: din-condensed, sans-serif;
+  font-style: normal;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex-70 {
+  flex-basis: 70% !important;
+  max-width: 70% !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flex-30 {
+  flex-basis: 30% !important;
+  max-width: 30% !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  height: 700px;
+  background: #FEDAC9;
+}
+.headerBox {
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/headerImage);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1100px 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header .logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: #000;
+  float: left;
+  padding-right: 22px;
+}
+header .menu {
+  width: 100%;
+}
+header .menu .flex-30 {
+  display: flex;
+  justify-content: flex-end;
+}
+header .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+}
+header .menu ul li {
+  padding: 5px 22px;
+  display: inline-block;
+}
+header .menu ul li a {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header .menu ul li a:hover {
+  text-decoration: underline;
+}
+.headerBox .imageText h1,
+.headerBox .imageText h2,  
+.headerBox .imageText p {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #fff;
+  font-weight: 700;
+  
+}
+.headerBox .imageText h1 {
+  font-size: 65px;
+  line-height: 60px;
+}
+.headerBox .imageText h2 {
+  font-size: 45px;
+  line-height: 40px;
+}
+.imageText p {
+  text-align: center;
+  font-size: 28px;
+}
+.blankSpace {
+  height: 100px;
+  background: #fff;
+}
+.locationMap {
+  height: 450px;
+  background: #FEDAC9;
+  position: relative;
+}
+.locationMap img {
+  height: 100%;
+  width: 100%;
+}
+.locationMap .locationAddress {
+  background: #fff;
+  min-height: 80px;
+  width: 230px;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  transform: translate(-10%, -30%);
+  z-index: 5;
+  padding: 30px 15px 15px 15px;
+}
+.locationAddress h1 {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 35px;
+  position: absolute;
+  font-weight: 600;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+.locationAddress p {
+  margin: 0;
+  font-size: 14px;
+  color: #2c2b2b;
+}
+.infoWrapper {
+  min-height: 100px;
+  background: #fff;
+  padding: 10px 5px;
+  position: fixed;
+  right: 10px;
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+  z-index: 5;
+}
+.infoWrapper h4 {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+}
+.zoomInOutWrapper {
+  height: 70px;
+  width: 35px;
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+}
+.zoomInOutWrapper img {
+  height: 100%;
+  width: 100%;
 }
