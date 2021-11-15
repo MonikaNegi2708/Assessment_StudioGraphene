@@ -11,7 +11,7 @@ Port `3000` should be available on the machine.
 
 2. Clone this repo using git clone using following command : git clone https://github.com/MonikaNegi2708\Assessment_StudioGraphene.git
 
-3. Switch to respective directory using following command : cd ./Assessment_StudioGraphene/assessment
+3. Switch to respective directory using following command : cd ./Assessment_StudioGraphene
 
 4. Run following command to install dependencies : npm install
 
